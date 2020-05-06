@@ -9,7 +9,7 @@
 namespace rosserial_msgs
 {
 
-#ifdef ESP8266
+#if defined(ESP8266) || defined(__IMXRT1062__)
     static const char REQUESTPARAM[] = "rosserial_msgs/RequestParam";
 #else
     static const char REQUESTPARAM[] PROGMEM = "rosserial_msgs/RequestParam";
